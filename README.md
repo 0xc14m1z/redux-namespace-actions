@@ -4,8 +4,6 @@
 
 Add a namespace to redux actions in order to have leaner names.
 
-## DO NOT USE THIS PACKAGE, IT STILL IN DEVELOPMENT
-
 ## how to install
 
 ```
@@ -13,3 +11,16 @@ $ npm install --save redux-namespace-actions
 ```
 
 ## how to use it
+
+The goal of this package is to allow shorter and leaner names for redux actions in different files.
+Using a name space, you will be able to define scoped action type constants and use them accross your project.
+
+```js
+import namespace from "redux-namespace-actions"
+// or var namespace = require("redux-namespace-actions")
+
+const action = namespace("MY_NAMESPACE")
+
+const ACTION_TYPE = action("ACTION_TYPE")
+
+```
