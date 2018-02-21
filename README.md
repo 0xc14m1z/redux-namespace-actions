@@ -13,13 +13,27 @@ $ npm install --save redux-namespace-actions
 ## how to use it
 
 The goal of this package is to allow shorter and leaner names for redux actions in different files.
-Using a name space, you will be able to define scoped action type constants and use them accross your project.
 
 ```js
+// file a.js
+
 import namespace from "redux-namespace-actions"
 // or var namespace = require("redux-namespace-actions")
 
-const action = namespace("MY_NAMESPACE")
+const action = namespace("FIRST_NAMESPACE")
+
+const ACTION_TYPE = action("ACTION_TYPE")
+
+```
+
+Using a name space, you will be able to define scoped action type constants and use them accross your project.
+
+```js
+// file b.js
+
+import namespace from "redux-namespace-actions"
+
+const action = namespace("SECOND_NAMESPACE")
 
 const ACTION_TYPE = action("ACTION_TYPE")
 
