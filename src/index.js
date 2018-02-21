@@ -1,5 +1,9 @@
 const namespace = (namespaceName) => (actionName) =>
   validate(namespaceName, actionName) && join(namespaceName, actionName)
+  
+export default namespace
+module.exports = namespace
+
 
 const join = (...args) =>
   args.join("/")
@@ -15,6 +19,3 @@ const validate = (namespaceName, actionName) => {
 
 const isString = s =>
   typeof s === "string"
-
-export default namespace
-module.exports = namespace
