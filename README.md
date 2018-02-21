@@ -4,6 +4,8 @@
 
 Add a namespace to redux actions in order to have leaner names.
 
+## DO NOT USE THIS PACKAGE, IT STILL IN DEVELOPMENT
+
 ## how to install
 
 ```
