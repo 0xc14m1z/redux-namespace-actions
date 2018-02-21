@@ -1,6 +1,6 @@
 {
   "name": "redux-namespaced-actions",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Add a namespace to redux actions in order to have leaner names.",
   "main": "./dist/index.js",
   "files": [
